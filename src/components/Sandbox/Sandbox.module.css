@@ -1,52 +1,55 @@
-.sandbox{
+.sandbox {
     font: initial;
     display: flex;
     color: rgb(255, 255, 255);
 }
-.sandbox__item2{
+
+.sandbox__item2 {
     width: calc(100vw - 600px);
 }
-.sandbox__item{
+
+.sandbox__item {
     width: 600px;
     background-color: #272822;
     position: relative;
 }
-.sandbox__item nav{
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   height: 70px;
-   padding: 0 15px;
-   gap: 15px;
-   border-bottom: 2px solid #333;
+
+.sandbox__item nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 15px;
+    gap: 15px;
+    border-bottom: 2px solid #333;
 }
 
-.item_btn{
-height: 50px;
-flex: 1 1 auto;
-justify-content: center;
-align-items: center;
-border-radius: 4px;
-background: #333;
-color:  white;
-cursor: pointer;
-font-size: 15px;
-font-weight: 600;
-outline: none;
-border: none;
+.item_btn {
+    height: 50px;
+    flex: 1 1 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
 }
 
-.active{
+.active {
     background: #003399;
     color: white;
 }
 
-.editor{
+.editor {
     height: calc(100vh - 70px);
     padding: 10px;
 }
 
-.webcam{
+.webcam {
     height: 70px;
     flex-shrink: 0;
     background: #272822;
@@ -59,7 +62,8 @@ border: none;
     gap: 15px;
 
 }
-.camera{
+
+.camera1 {
     height: 50px;
     display: flex;
     justify-content: center;
@@ -75,17 +79,23 @@ border: none;
     outline: 0;
 }
 
-.camera:hover{
+.camera:hover {
     background: #444;
 }
 
-.body__code{
+.body__code {
     height: calc(100vh - 70px);
 }
 
-.preview{
+.preview {
     width: 100%;
     height: 100%;
 }
 
-
+.camera {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    z-index: 11111;
+}

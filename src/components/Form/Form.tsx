@@ -14,7 +14,7 @@ const Form = () => {
       .sendForm(
         "service_81yo8af",
         "template_0o7t7h3",
-        form.current,
+        form.current, 
         "DxI3gho62aUgl7W4f"
       )
       .then(
@@ -34,13 +34,13 @@ const Form = () => {
           <div className={style.form_inputs}>
             <h2>Форма для записи</h2>
             <div>
-              <input className={style.input_form_name} placeholder="Name" type="text" />
+              <input className={style.input_form_name} placeholder="Name" name="user_name" type="text" />
             </div>
             <div>
-              <input className={style.input_form_email} placeholder="Email" type="text" />
+              <input className={style.input_form_email} placeholder="Email" name="user_email" type="email" />
             </div>
             <div>
-              <input className={style.input_form_telephone} placeholder="Telephone" type="text" />
+              <input className={style.input_form_telephone} placeholder="Telephone" name="user_phone" type="phone" />
             </div>
             <div className={style.form_btn}>
               <button className={style.btn}>Записаться</button>
